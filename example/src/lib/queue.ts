@@ -1,4 +1,4 @@
-import { RequestQueue } from 'rest-queue';
+import { RequestQueue } from 'sync-later';
 
 export const queue = new RequestQueue({
   remoteUrl: 'https://jsonplaceholder.typicode.com',

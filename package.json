@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "rest-queue",
   "version": "1.0.1",
+=======
+  "name": "sync-later",
+  "version": "1.0.0",
+>>>>>>> 4315ece (feat: rename library to sync-later)
   "description": "Zero-dependency, offline-first mutation engine for REST APIs. Features reliable persistence, dependency chaining, automatic retries with backoff, and file upload support.",
   "keywords": [
     "rest-api",
@@ -40,11 +45,11 @@
   "author": "denisetiya",
   "repository": {
     "type": "git",
-    "url": "https://github.com/denisetiya/rest-queue.git"
+    "url": "https://github.com/denisetiya/sync-later.git"
   },
-  "homepage": "https://github.com/denisetiya/rest-queue#readme",
+  "homepage": "https://github.com/denisetiya/sync-later#readme",
   "bugs": {
-    "url": "https://github.com/denisetiya/rest-queue/issues"
+    "url": "https://github.com/denisetiya/sync-later/issues"
   },
   "license": "ISC",
   "release": {

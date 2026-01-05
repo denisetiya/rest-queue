@@ -2,9 +2,9 @@
 
 **Offline Mutation Engine for Standard REST API**
 
-`rest-queue` is a robust, lightweight library designed to ensure your data mutations (POST, PUT, DELETE, PATCH) never fail, even in unstable network conditions. It persists requests, handles retries with exponential backoff, manages complex dependency chains between requests, and now supports file uploads and reactive event updates.
+`sync-later` is a robust, lightweight library designed to ensure your data mutations (POST, PUT, DELETE, PATCH) never fail, even in unstable network conditions. It persists requests, handles retries with exponential backoff, manages complex dependency chains between requests, and now supports file uploads and reactive event updates.
 
-Unlike heavyweight solutions like TanStack Query or Apollo Client which focus on *fetching*, `rest-queue` focuses purely on *reliable mutations*.
+Unlike heavyweight solutions like TanStack Query or Apollo Client which focus on *fetching*, `sync-later` focuses purely on *reliable mutations*.
 
 ## Features 🚀
 
@@ -20,17 +20,17 @@ Unlike heavyweight solutions like TanStack Query or Apollo Client which focus on
 ## Installation
 
 ```bash
-npm install rest-queue
+npm install sync-later
 # or
-pnpm add rest-queue
+pnpm add sync-later
 # or
-yarn add rest-queue
+yarn add sync-later
 ```
 
 ## Quick Start
 
 ```typescript
-import { RequestQueue } from 'rest-queue';
+import { RequestQueue } from 'sync-later';
 
 // 1. Initialize the queue
 const queue = new RequestQueue({

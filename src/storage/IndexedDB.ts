@@ -1,4 +1,4 @@
-const DB_NAME = 'rest-queue-db';
+const DB_NAME = 'sync-later-db';
 const DB_VERSION = 1;
 const STORE_NAME = 'queue';
 

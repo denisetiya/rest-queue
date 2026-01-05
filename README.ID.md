@@ -3,9 +3,9 @@
 **Engine Mutasi Offline-First untuk Standar REST API**
 
 
-`rest-queue` adalah perpustakaan (library) yang kuat dan ringan yang dirancang untuk memastikan mutasi data Anda (POST, PUT, DELETE, PATCH) tidak pernah gagal, bahkan dalam kondisi jaringan yang tidak stabil. Library ini menyimpan permintaan (request), menangani percobaan ulang (retry) dengan strategi exponential backoff, mengelola rantai dependensi yang kompleks antar permintaan, dan kini mendukung unggahan file serta pembaruan event yang reaktif.
+`sync-later` adalah perpustakaan (library) yang kuat dan ringan yang dirancang untuk memastikan mutasi data Anda (POST, PUT, DELETE, PATCH) tidak pernah gagal, bahkan dalam kondisi jaringan yang tidak stabil. Library ini menyimpan permintaan (request), menangani percobaan ulang (retry) dengan strategi exponential backoff, mengelola rantai dependensi yang kompleks antar permintaan, dan kini mendukung unggahan file serta pembaruan event yang reaktif.
 
-Berbeda dengan solusi berat seperti TanStack Query atau Apollo Client yang berfokus pada *fetching* (pengambilan data), `rest-queue` berfokus murni pada *mutasi yang reliable*.
+Berbeda dengan solusi berat seperti TanStack Query atau Apollo Client yang berfokus pada *fetching* (pengambilan data), `sync-later` berfokus murni pada *mutasi yang reliable*.
 
 ## Fitur 🚀
 
@@ -21,17 +21,17 @@ Berbeda dengan solusi berat seperti TanStack Query atau Apollo Client yang berfo
 ## Instalasi
 
 ```bash
-npm install rest-queue
+npm install sync-later
 # atau
-pnpm add rest-queue
+pnpm add sync-later
 # atau
-yarn add rest-queue
+yarn add sync-later
 ```
 
 ## Mulai Cepat
 
 ```typescript
-import { RequestQueue } from 'rest-queue';
+import { RequestQueue } from 'sync-later';
 
 // 1. Inisialisasi antrean
 const queue = new RequestQueue({

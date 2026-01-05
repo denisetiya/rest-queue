@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { type QueueItem } from 'rest-queue';
+import { type QueueItem } from 'sync-later';
 import { queue } from '../lib/queue';
 
 export function useQueue() {
