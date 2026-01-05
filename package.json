@@ -1,6 +1,6 @@
 {
   "name": "rest-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero-dependency, offline-first mutation engine for REST APIs. Features reliable persistence, dependency chaining, automatic retries with backoff, and file upload support.",
   "keywords": [
     "rest-api",
