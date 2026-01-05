@@ -1,7 +1,24 @@
 {
   "name": "rest-queue",
   "version": "1.0.0",
-  "description": "",
+  "description": "Zero-dependency, offline-first mutation engine for REST APIs. Features reliable persistence, dependency chaining, automatic retries with backoff, and file upload support.",
+  "keywords": [
+    "rest-api",
+    "offline-first",
+    "queue",
+    "request-queue",
+    "mutation-queue",
+    "fetch",
+    "retry",
+    "backoff",
+    "persistence",
+    "indexeddb",
+    "network-resilience",
+    "typescript",
+    "zero-dependency",
+    "file-upload",
+    "resilience"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,23 +34,38 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean",
-    "test": "vitest",
+    "test": "vitest --environment happy-dom",
     "lint": "eslint ."
   },
-  "keywords": [],
   "author": "denisetiya",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denisetiya/rest-queue.git"
+  },
+  "homepage": "https://github.com/denisetiya/rest-queue#readme",
+  "bugs": {
+    "url": "https://github.com/denisetiya/rest-queue/issues"
+  },
   "license": "ISC",
   "release": {
-    "branches": ["main"],
+    "branches": [
+      "main"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
       "@semantic-release/npm",
-      ["@semantic-release/git", {
-        "assets": ["package.json", "CHANGELOG.md"],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
       "@semantic-release/github"
     ]
   },
@@ -48,6 +80,7 @@
     "conventional-changelog-conventionalcommits": "^9.1.0",
     "eslint": "^9.39.2",
     "globals": "^17.0.0",
+    "happy-dom": "^20.0.11",
     "semantic-release": "^25.0.2",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
