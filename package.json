@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "rest-queue",
   "version": "1.0.1",
-=======
-  "name": "sync-later",
-  "version": "1.0.0",
->>>>>>> 4315ece (feat: rename library to sync-later)
   "description": "Zero-dependency, offline-first mutation engine for REST APIs. Features reliable persistence, dependency chaining, automatic retries with backoff, and file upload support.",
   "keywords": [
     "rest-api",
