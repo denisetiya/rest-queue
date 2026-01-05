@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Queue-Rest Demo</h1>
+      <h1>Sync-Later Demo</h1>
       
       <NetworkStatus isOnline={isOnline} />
       <Controls onLog={handleLog} />
