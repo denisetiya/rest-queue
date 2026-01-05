@@ -9,7 +9,8 @@ export function useQueue() {
   useEffect(() => {
     queue.getQueue().then(setItems);
 
-    const updateCallback = (newQueue: QueueItem[]) => {
+    const updateCallback = (data: unknown) => {
+        const newQueue = data as QueueItem[];
         setItems([...newQueue]);
     };
 
